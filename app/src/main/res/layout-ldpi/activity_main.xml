@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/cp10r"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/timeTable"
+        android:layout_width="91dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kalpurush"
+        android:text="সময়সূচি"
+        android:textSize="15dp"
+        app:backgroundTint="@color/teal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/doya"
+        android:layout_width="91dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/kalpurush"
+        android:text="দোয়া"
+        android:textSize="15dp"
+        app:backgroundTint="@color/teal2"
+        app:layout_constraintEnd_toEndOf="@+id/timeTable"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/timeTable"
+        app:layout_constraintTop_toBottomOf="@+id/timeTable" />
+
+    <Button
+        android:id="@+id/tosbi"
+        android:layout_width="91dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/kalpurush"
+        android:text="তসবী"
+        android:textSize="15dp"
+        app:backgroundTint="@color/teal2"
+        app:layout_constraintEnd_toEndOf="@+id/doya"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doya"
+        app:layout_constraintTop_toBottomOf="@+id/doya" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:text="About"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:backgroundTint="@color/teal2"
+        app:layout_constraintEnd_toEndOf="@+id/tosbi"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/tosbi"
+        app:layout_constraintTop_toBottomOf="@+id/tosbi" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/norwester"
+        android:text="Welcome to"
+        android:textAllCaps="true"
+        android:textColor="#FFA500"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="240dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/norwester"
+        android:text="RAMADAN TIMING 2021"
+        android:textAllCaps="true"
+        android:textColor="#FFA500"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/exitt"
+        android:layout_width="88dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:text="Exit"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:backgroundTint="@color/teal2"
+        app:layout_constraintEnd_toEndOf="@+id/about"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/about"
+        app:layout_constraintTop_toBottomOf="@+id/about" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7382165076561685/6997437788"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abggr"
+    tools:context=".About">
+
+    <ImageView
+        android:id="@+id/aboutFahim"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="208dp"
+        android:contentDescription="@string/aboutfahim"
+        android:onClick="aboutFahim"
+        android:tag="https://www.facebook.com/hasib.fahim.official"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aboutfahim" />
+
+    <ImageView
+        android:id="@+id/aboutMaruf"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/aboutmaruf"
+        android:onClick="aboutMaruf"
+        android:tag="https://www.facebook.com/maruf.ahmed.official"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/aboutFahim"
+        app:layout_constraintTop_toBottomOf="@+id/aboutFahim"
+        app:srcCompat="@drawable/aboutmaruf" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="326dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7382165076561685/5695609182"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

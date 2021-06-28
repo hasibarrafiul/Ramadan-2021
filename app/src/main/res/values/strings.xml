@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ramadan 2021</string>
+    <string name="background">background</string>
+    <string name="aboutmaruf">AboutMaruf</string>
+    <string name="aboutfahim">AboutFahim</string>
+    <string name="about">About</string>
+    <string name="welcome_to">Welcome to</string>
+</resources>
